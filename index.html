@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="bg" data-lang="bg" class="is-loading">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bar & Dinner 88 — Vitosha Boulevard, Sofia</title>
+    <meta
+      name="description"
+      content="Bar & Dinner 88 — cinematic dining on Vitosha Boulevard 12, Sofia. Reservations, tasting menus, cocktails, and private events."
+    />
+    <meta
+      name="keywords"
+      content="Bar & Dinner 88, fine dining Sofia, Vitosha restaurant, Vitosha Blvd 12, cocktail bar Sofia, tasting menu, reservations Sofia, ресторант Витоша"
+    />
+    <meta name="author" content="Bar & Dinner 88" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#07070a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bar & Dinner 88 — Vitosha Boulevard, Sofia" />
+    <meta
+      property="og:description"
+      content="Premium restaurant &amp; bar on Vitosha 12 — reservations, chef-led menus, cocktails."
+    />
+    <meta property="og:locale" content="bg_BG" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bar & Dinner 88 — Sofia" />
+    <meta
+      name="twitter:description"
+      content="Cinematic dining on Vitosha Boulevard — book your table."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#07070a",
+              surface: "#0c0c10",
+              elevated: "#14141b",
+              primary: "#d4af37",
+              primaryMuted: "#9a7b2d",
+              mist: "#b6ab92",
+              cream: "#f3ead8",
+            },
+            fontFamily: {
+              display: ['"Cormorant Garamond"', "Georgia", "serif"],
+              sans: ['"DM Sans"', "system-ui", "sans-serif"],
+            },
+            boxShadow: {
+              glow: "0 0 0 1px rgba(212,175,55,0.22), 0 0 48px -12px rgba(212,175,55,0.35)",
+              glass: "0 24px 80px rgba(0,0,0,0.55)",
+            },
+            transitionTimingFunction: {
+              out: "cubic-bezier(0.16, 1, 0.3, 1)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      html.is-loading,
+      html.is-loading body {
+        overflow: hidden;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        .hero-ken,
+        .noise-anim {
+          animation: none !important;
+        }
+      }
+      body {
+        background-color: #07070a;
+        color: #e8e0d2;
+        text-rendering: optimizeLegibility;
+        font-feature-settings: "kern" 1, "liga" 1;
+      }
+      .type-display {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+      }
+      .type-body {
+        font-family: "DM Sans", system-ui, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+      }
+      .glass-panel {
+        background: linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.07) 0%,
+          rgba(255, 255, 255, 0.02) 45%,
+          rgba(0, 0, 0, 0.25) 100%
+        );
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow:
+          0 1px 0 rgba(255, 255, 255, 0.06) inset,
+          0 32px 64px -24px rgba(0, 0, 0, 0.65);
+        backdrop-filter: blur(20px) saturate(140%);
+        -webkit-backdrop-filter: blur(20px) saturate(140%);
+      }
+      .hero-vignette {
+        background: radial-gradient(ellipse at center, transparent 35%, rgba(0, 0, 0, 0.75) 100%);
+      }
+      .hero-ken {
+        animation: heroKen 36s ease-in-out infinite alternate;
+        transform-origin: center;
+      }
+      @keyframes heroKen {
+        from {
+          transform: scale(1) translate3d(0, 0, 0);
+        }
+        to {
+          transform: scale(1.09) translate3d(-1.5%, -1%, 0);
+        }
+      }
+      [data-gsap-scroll] {
+        will-change: transform, opacity;
+      }
+      [data-premium-hover] {
+        will-change: transform;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        [data-gsap-scroll] {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+        [data-premium-hover] {
+          transform: none !important;
+        }
+      }
+      #site-preloader {
+        transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.7s step-end;
+      }
+      html.is-loaded #site-preloader {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      #site-header.is-scrolled {
+        background-color: rgba(7, 7, 10, 0.72);
+        border-color: rgba(212, 175, 55, 0.12);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+      }
+      .nav-link {
+        position: relative;
+      }
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.35rem;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        opacity: 0;
+        transform: scaleX(0.4);
+        transition:
+          opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .nav-link:hover::after,
+      .nav-link.is-active::after {
+        opacity: 1;
+        transform: scaleX(1);
+      }
+      .nav-link.is-active {
+        color: #f3ead8;
+      }
+      #tablein-booking {
+        color-scheme: dark;
+      }
+      .gallery-parallax-img {
+        will-change: transform;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .gallery-parallax-img {
+          will-change: auto;
+          transform: none !important;
+        }
+      }
+      #custom-cursor {
+        pointer-events: none;
+      }
+      @media (pointer: coarse), (hover: none) {
+        #custom-cursor {
+          display: none !important;
+        }
+      }
+      .btn-primary {
+        background-image: linear-gradient(120deg, #c9982c, #f2e3a8 42%, #d4af37 88%);
+      }
+      .burger-line {
+        transform-origin: center;
+        transition:
+          transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+          opacity 0.35s ease;
+      }
+      #mobile-menu-btn.is-open .burger-line:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+      }
+      #mobile-menu-btn.is-open .burger-line:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+      }
+      #mobile-menu-btn.is-open .burger-line:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+    </style>
+  </head>
+  <body
+    class="touch-manipulation min-h-screen bg-ink pb-[calc(5.25rem+env(safe-area-inset-bottom))] font-sans text-[17px] leading-relaxed text-mist/95 antialiased selection:bg-primary/25 selection:text-cream md:text-lg md:leading-loose"
+  >
+    <div
+      id="site-preloader"
+      class="fixed inset-0 z-[200] flex flex-col items-center justify-center bg-ink"
+      role="status"
+      aria-live="polite"
+      aria-busy="true"
+    >
+      <div
+        class="font-display text-4xl tracking-[0.55em] text-primary sm:text-5xl"
+        data-i18n="preloader.mark"
+      >
+        88
+      </div>
+      <p class="mt-6 text-xs uppercase tracking-[0.45em] text-mist/55" data-i18n="preloader.sub">
+        Bar &amp; Dinner
+      </p>
+    </div>
+
+    <div
+      id="scroll-progress"
+      class="pointer-events-none fixed left-0 top-0 z-[190] h-[3px] w-full origin-left bg-gradient-to-r from-primaryMuted via-primary to-cream"
+      aria-hidden="true"
+    ></div>
+
+    <div
+      id="custom-cursor"
+      class="pointer-events-none fixed left-0 top-0 z-[185] hidden h-9 w-9 rounded-full border border-primary/40 bg-cream/5 mix-blend-screen shadow-glow md:block"
+      aria-hidden="true"
+    ></div>
+
+    <header
+      id="site-header"
+      class="fixed inset-x-0 top-0 z-[120] border-b border-transparent transition-all duration-500 ease-out"
+    >
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 sm:px-7 lg:px-10">
+        <a
+          href="#hero"
+          class="group font-display text-xl tracking-tight text-cream transition-colors duration-300 group-hover:text-primary sm:text-2xl"
+        >
+          <span class="text-primary">Bar</span><span class="text-mist/80">&amp;</span><span class="text-cream"> Dinner 88</span>
+        </a>
+
+        <nav
+          class="hidden items-center gap-9 text-[11px] font-semibold uppercase tracking-[0.28em] text-mist/80 lg:flex"
+          aria-label="Primary"
+        >
+          <a href="#brand" class="nav-link transition-colors duration-300 hover:text-cream" data-nav="brand" data-i18n="nav.story">Story</a>
+          <a href="#menu" class="nav-link transition-colors duration-300 hover:text-cream" data-nav="menu" data-i18n="nav.menu">Menu</a>
+          <a href="#gallery" class="nav-link transition-colors duration-300 hover:text-cream" data-nav="gallery" data-i18n="nav.gallery">Gallery</a>
+          <a href="#booking" class="nav-link transition-colors duration-300 hover:text-cream" data-nav="booking" data-i18n="nav.booking">Reserve</a>
+          <a href="#contact" class="nav-link transition-colors duration-300 hover:text-cream" data-nav="contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <div
+            class="flex rounded-full border border-primary/20 bg-ink/40 p-0.5 backdrop-blur-md"
+            role="group"
+            data-i18n-aria="aria.lang"
+            aria-label="Language"
+            id="lang-switch"
+          >
+            <button
+              type="button"
+              data-lang-btn="bg"
+              class="rounded-full px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-mist/70 transition hover:text-cream"
+              aria-pressed="true"
+            >
+              BG
+            </button>
+            <button
+              type="button"
+              data-lang-btn="en"
+              class="rounded-full px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-mist/70 transition hover:text-cream"
+              aria-pressed="false"
+            >
+              EN
+            </button>
+          </div>
+
+          <button
+            type="button"
+            class="relative inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-primary/20 bg-ink/30 text-cream backdrop-blur-md transition hover:border-primary/40 hover:shadow-glow lg:hidden"
+            id="mobile-menu-btn"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+            aria-label="Open menu"
+          >
+            <span class="sr-only" data-i18n="aria.openMenu">Open menu</span>
+            <span class="flex h-4 w-5 flex-col justify-between" aria-hidden="true">
+              <span class="burger-line h-0.5 w-full rounded-full bg-cream transition"></span>
+              <span class="burger-line h-0.5 w-full rounded-full bg-cream transition"></span>
+              <span class="burger-line h-0.5 w-full rounded-full bg-cream transition"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div
+      id="mobile-drawer"
+      class="fixed inset-0 z-[110] hidden bg-ink/95 backdrop-blur-2xl lg:hidden"
+      hidden
+      aria-hidden="true"
+    >
+      <div class="flex h-full flex-col px-8 pb-10 pt-24">
+        <nav class="flex flex-1 flex-col gap-2 text-2xl font-display text-cream" aria-label="Mobile">
+          <a href="#brand" class="flex min-h-[52px] items-center border-b border-white/5 py-2 transition hover:text-primary active:bg-white/5" data-i18n="nav.story">Story</a>
+          <a href="#menu" class="flex min-h-[52px] items-center border-b border-white/5 py-2 transition hover:text-primary active:bg-white/5" data-i18n="nav.menu">Menu</a>
+          <a href="#gallery" class="flex min-h-[52px] items-center border-b border-white/5 py-2 transition hover:text-primary active:bg-white/5" data-i18n="nav.gallery">Gallery</a>
+          <a href="#booking" class="flex min-h-[52px] items-center border-b border-white/5 py-2 transition hover:text-primary active:bg-white/5" data-i18n="nav.booking">Reserve</a>
+          <a href="#contact" class="flex min-h-[52px] items-center border-b border-white/5 py-2 transition hover:text-primary active:bg-white/5" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <p class="text-xs uppercase tracking-[0.35em] text-mist/50" data-i18n="mobile.tagline">Vitosha Boulevard · Sofia</p>
+      </div>
+    </div>
+
+    <main id="top">
+      <section
+        id="hero"
+        class="relative flex min-h-[100dvh] flex-col justify-end overflow-hidden pb-16 pt-28 sm:justify-center sm:pb-24 sm:pt-32 lg:pb-28"
+        aria-labelledby="hero-heading"
+      >
+        <div class="pointer-events-none absolute inset-0">
+          <img
+            id="hero-bg-img"
+            class="hero-ken absolute inset-0 h-full w-full object-cover object-center"
+            src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&amp;fit=crop&amp;w=2400&amp;q=82"
+            width="2400"
+            height="1600"
+            alt=""
+            fetchpriority="high"
+            decoding="async"
+            data-i18n-alt="hero.bgAlt"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-ink/80 via-ink/55 to-ink"
+            aria-hidden="true"
+          ></div>
+          <div
+            class="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_0%,rgba(212,175,55,0.18),transparent_55%),radial-gradient(ellipse_at_80%_100%,rgba(212,175,55,0.12),transparent_50%)]"
+            aria-hidden="true"
+          ></div>
+          <svg class="noise-anim pointer-events-none absolute inset-0 h-full w-full opacity-[0.045]" aria-hidden="true">
+            <filter id="grain">
+              <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch" />
+            </filter>
+            <rect width="100%" height="100%" filter="url(#grain)" />
+          </svg>
+          <div class="pointer-events-none absolute inset-0 z-[3] hero-vignette mix-blend-multiply" aria-hidden="true"></div>
+        </div>
+
+        <div class="relative z-10 mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10">
+          <div
+            class="glass-panel max-w-4xl rounded-[1.75rem] border border-primary/12 p-7 shadow-[0_0_0_1px_rgba(212,175,55,0.06)_inset,0_40px_100px_-40px_rgba(0,0,0,0.85)] sm:p-10 lg:p-12"
+          >
+          <p
+            class="mb-5 text-[11px] font-semibold uppercase tracking-[0.45em] text-primary/90 sm:text-xs"
+            data-i18n="hero.eyebrow"
+            data-hero-line
+          >
+            Vitosha Boulevard · Sofia
+          </p>
+          <h1
+            id="hero-heading"
+            class="type-display max-w-[18ch] font-display text-[clamp(3.75rem,9vw,5.25rem)] font-medium leading-[0.95] tracking-tight text-cream sm:max-w-[20ch]"
+            data-i18n="hero.title"
+            data-hero-line
+          >
+            Bar &amp; Dinner 88
+          </h1>
+          <p
+            class="type-body mt-7 max-w-2xl text-lg leading-relaxed text-mist/90 sm:text-xl sm:leading-relaxed md:max-w-3xl md:text-2xl md:leading-relaxed"
+            data-i18n="hero.tagline"
+            data-hero-line
+          >
+            A cinematic dining room on Vitosha — fire-kissed plates, precise cocktails, and nights that stay with you.
+          </p>
+          <p
+            class="type-body mt-5 max-w-xl text-base leading-relaxed text-mist/75 md:text-lg"
+            data-i18n="hero.sub"
+            data-hero-line
+          >
+            Chef-led menus, low-lit luxury, and the hum of Sofia outside the door.
+          </p>
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center" data-hero-line>
+            <a
+              href="#booking"
+              class="btn-primary inline-flex min-h-[52px] items-center justify-center gap-2 rounded-2xl px-9 py-3.5 text-[11px] font-semibold uppercase tracking-[0.3em] text-ink shadow-glow transition duration-500 ease-out hover:-translate-y-0.5 hover:shadow-[0_0_0_1px_rgba(212,175,55,0.35),0_0_60px_-8px_rgba(212,175,55,0.55)] sm:min-h-[56px] sm:px-10"
+            >
+              <i data-lucide="calendar-check" class="h-4 w-4 shrink-0" aria-hidden="true"></i>
+              <span data-i18n="hero.cta">Reserve a table</span>
+            </a>
+            <a
+              href="#menu"
+              class="inline-flex min-h-[52px] items-center justify-center gap-2 rounded-2xl border border-cream/15 bg-cream/5 px-9 py-3.5 text-[11px] font-semibold uppercase tracking-[0.3em] text-cream backdrop-blur-md transition duration-500 ease-out hover:border-primary/35 hover:bg-cream/10 hover:shadow-glass sm:min-h-[56px] sm:px-10"
+            >
+              <i data-lucide="utensils" class="h-4 w-4 shrink-0" aria-hidden="true"></i>
+              <span data-i18n="hero.cta2">View the menu</span>
+            </a>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="trust"
+        class="relative z-[5] scroll-mt-28 border-y border-white/6 bg-gradient-to-b from-ink/95 via-surface/90 to-ink/95 px-5 py-14 backdrop-blur-xl sm:px-8 sm:py-16 lg:scroll-mt-32 lg:px-10"
+        aria-labelledby="trust-heading"
+      >
+        <div class="mx-auto max-w-7xl" data-gsap-scroll>
+          <div class="flex flex-col gap-12 lg:flex-row lg:items-end lg:justify-between lg:gap-16">
+            <div class="max-w-xl">
+              <p class="text-[11px] font-semibold uppercase tracking-[0.4em] text-primary/85" data-i18n="trust.kicker">
+                Trusted on the boulevard
+              </p>
+              <h2
+                id="trust-heading"
+                class="mt-3 font-display text-3xl leading-tight text-cream sm:text-4xl lg:text-[2.75rem] lg:leading-[1.08]"
+                data-i18n="trust.title"
+              >
+                Prime tables disappear fast on Vitosha weekends
+              </h2>
+            </div>
+            <div class="grid w-full max-w-2xl grid-cols-3 gap-4 sm:gap-6 lg:max-w-none lg:flex-1">
+              <div class="glass-panel rounded-2xl px-3 py-5 text-center sm:px-5 sm:py-6">
+                <p class="font-display text-3xl tabular-nums text-primary sm:text-4xl">4.9</p>
+                <p class="mt-2 text-[9px] font-semibold uppercase leading-snug tracking-[0.22em] text-mist/60 sm:text-[10px] sm:tracking-[0.28em]" data-i18n="trust.stat1">
+                  Guest rating
+                </p>
+              </div>
+              <div class="glass-panel rounded-2xl px-3 py-5 text-center sm:px-5 sm:py-6">
+                <p class="font-display text-3xl tabular-nums text-cream sm:text-4xl">2k+</p>
+                <p class="mt-2 text-[9px] font-semibold uppercase leading-snug tracking-[0.22em] text-mist/60 sm:text-[10px] sm:tracking-[0.28em]" data-i18n="trust.stat2">
+                  Covers served
+                </p>
+              </div>
+              <div class="glass-panel rounded-2xl px-3 py-5 text-center sm:px-5 sm:py-6">
+                <p class="font-display text-2xl leading-none text-cream sm:text-3xl">★★★★</p>
+                <p class="mt-2 text-[9px] font-semibold uppercase leading-snug tracking-[0.22em] text-mist/60 sm:text-[10px] sm:tracking-[0.28em]" data-i18n="trust.stat3">
+                  Boulevard pick
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="mt-10 max-w-3xl text-sm leading-relaxed text-mist/72" data-i18n="trust.note">
+            Locals, hotel guests, and sommeliers-in-transit — the room fills with people who care how a night feels,
+            not just how it photographs.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="brand"
+        class="scroll-mt-28 border-t border-primary/10 bg-gradient-to-b from-ink via-surface to-ink px-5 py-24 sm:px-8 sm:py-28 lg:scroll-mt-32 lg:px-10 lg:py-36"
+        aria-labelledby="brand-heading"
+      >
+        <div class="mx-auto max-w-7xl">
+          <div class="grid gap-16 lg:grid-cols-12 lg:gap-12">
+            <div class="lg:col-span-5" data-gsap-scroll>
+              <p class="text-[11px] font-semibold uppercase tracking-[0.4em] text-primary/85" data-i18n="brand.kicker">
+                Our story
+              </p>
+              <h2
+                id="brand-heading"
+                class="mt-4 font-display text-4xl leading-tight text-cream sm:text-5xl lg:text-[3.25rem] lg:leading-[1.05]"
+                data-i18n="brand.title"
+              >
+                Crafted for Vitosha nights
+              </h2>
+              <p class="mt-8 text-lg leading-relaxed text-mist/85 md:text-xl md:leading-relaxed" data-i18n="brand.story">
+                We built Bar &amp; Dinner 88 as a stage for seasonal Bulgarian produce, European technique, and the
+                electricity of downtown Sofia — intimate, cinematic, intentional.
+              </p>
+            </div>
+            <div class="lg:col-span-7" data-gsap-scroll>
+              <div
+                class="glass-panel relative overflow-hidden rounded-[1.75rem] border border-primary/15 p-8 shadow-glass sm:p-10 lg:p-12"
+              >
+                <div
+                  class="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-primary/15 blur-3xl"
+                  aria-hidden="true"
+                ></div>
+                <p class="text-[11px] font-semibold uppercase tracking-[0.35em] text-primary/80" data-i18n="brand.chefKicker">
+                  Chef
+                </p>
+                <p class="mt-4 font-display text-3xl text-cream sm:text-4xl" data-i18n="brand.chefName">Alexandar Marinov</p>
+                <p class="mt-6 text-lg leading-relaxed text-mist/85" data-i18n="brand.chefBio">
+                  A kitchen driven by instinct and restraint — sauces reduced slowly, fish kissed by smoke, desserts
+                  that feel like the last scene of a film.
+                </p>
+                <div class="mt-10 grid gap-6 sm:grid-cols-2">
+                  <div class="rounded-2xl border border-white/5 bg-ink/40 p-6">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.3em] text-primary/80" data-i18n="brand.philoKicker">
+                      Philosophy
+                    </p>
+                    <p class="mt-3 text-base leading-relaxed text-mist/80" data-i18n="brand.philo">
+                      Honest ingredients, disciplined service, and a dining room where every plate earns its spotlight.
+                    </p>
+                  </div>
+                  <div class="rounded-2xl border border-white/5 bg-ink/40 p-6">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.3em] text-primary/80" data-i18n="brand.sigKicker">
+                      Signature
+                    </p>
+                    <p class="mt-3 text-base leading-relaxed text-mist/80" data-i18n="brand.sig">
+                      Ember-roasted meats, coastal fish, and a cocktail program built like a perfume pyramid — base,
+                      heart, finish.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-20 grid gap-8 lg:mt-28 lg:grid-cols-3" data-gsap-scroll>
+            <figure
+              class="group relative overflow-hidden rounded-[1.75rem] border border-primary/12 bg-elevated/50 p-8 shadow-glass backdrop-blur-lg"
+            >
+              <blockquote class="font-display text-2xl leading-snug text-cream" data-i18n="brand.quote1">
+                “The room feels like velvet and flame. We did not want the night to end.”
+              </blockquote>
+              <figcaption class="mt-6 text-xs uppercase tracking-[0.28em] text-mist/55" data-i18n="brand.quote1by">
+                — Guest journal, 2026
+              </figcaption>
+            </figure>
+            <figure
+              class="group relative overflow-hidden rounded-[1.75rem] border border-primary/12 bg-elevated/50 p-8 shadow-glass backdrop-blur-lg lg:translate-y-6"
+            >
+              <blockquote class="font-display text-2xl leading-snug text-cream" data-i18n="brand.quote2">
+                “Precise without being precious — Sofia finally has a boulevard restaurant with soul.”
+              </blockquote>
+              <figcaption class="mt-6 text-xs uppercase tracking-[0.28em] text-mist/55" data-i18n="brand.quote2by">
+                — Local critic
+              </figcaption>
+            </figure>
+            <figure
+              class="group relative overflow-hidden rounded-[1.75rem] border border-primary/12 bg-elevated/50 p-8 shadow-glass backdrop-blur-lg lg:translate-y-12"
+            >
+              <blockquote class="font-display text-2xl leading-snug text-cream" data-i18n="brand.quote3">
+                “The pairing flight was outrageous. Order it even if you swore you would not.”
+              </blockquote>
+              <figcaption class="mt-6 text-xs uppercase tracking-[0.28em] text-mist/55" data-i18n="brand.quote3by">
+                — Sommelier guest
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="menu"
+        class="scroll-mt-28 border-t border-primary/10 bg-ink px-5 py-24 sm:px-8 sm:py-28 lg:scroll-mt-32 lg:px-10 lg:py-36"
+        aria-labelledby="menu-heading"
+      >
+        <div class="mx-auto max-w-7xl">
+          <div class="max-w-3xl" data-gsap-scroll>
+            <p class="text-[11px] font-semibold uppercase tracking-[0.4em] text-primary/85" data-i18n="menu.kicker">
+              Menu
+            </p>
+            <h2
+              id="menu-heading"
+              class="mt-4 font-display text-4xl text-cream sm:text-5xl lg:text-[3.25rem]"
+              data-i18n="menu.sectionTitle"
+            >
+              Tasting the evening
+            </h2>
+            <p class="mt-6 text-lg leading-relaxed text-mist/85 md:text-xl md:leading-relaxed" data-i18n="menu.sectionLead">
+              Four moods — breakfast, lunch, dinner, drinks — switch without reloading. Hover each plate to feel the
+              kitchen breathe.
+            </p>
+          </div>
+
+          <div
+            class="mt-14 flex flex-wrap gap-3 border-b border-white/5 pb-8 sm:mt-16"
+            role="tablist"
+            aria-label="Menu categories"
+            id="menu-tabs"
+            data-gsap-scroll
+          >
+            <button
+              type="button"
+              role="tab"
+              id="tab-breakfast"
+              aria-selected="true"
+              aria-controls="menu-panel"
+              data-menu-filter="breakfast"
+              class="menu-tab rounded-2xl border border-primary/35 bg-primary/10 px-5 py-2.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-cream transition duration-500 ease-out hover:border-primary/60"
+              data-i18n="menu.cat.breakfast"
+            >
+              Breakfast
+            </button>
+            <button
+              type="button"
+              role="tab"
+              id="tab-lunch"
+              aria-selected="false"
+              aria-controls="menu-panel"
+              data-menu-filter="lunch"
+              class="menu-tab rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-2.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-mist/80 transition duration-500 ease-out hover:border-primary/35 hover:text-cream"
+              data-i18n="menu.cat.lunch"
+            >
+              Lunch
+            </button>
+            <button
+              type="button"
+              role="tab"
+              id="tab-dinner"
+              aria-selected="false"
+              aria-controls="menu-panel"
+              data-menu-filter="dinner"
+              class="menu-tab rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-2.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-mist/80 transition duration-500 ease-out hover:border-primary/35 hover:text-cream"
+              data-i18n="menu.cat.dinner"
+            >
+              Dinner
+            </button>
+            <button
+              type="button"
+              role="tab"
+              id="tab-drinks"
+              aria-selected="false"
+              aria-controls="menu-panel"
+              data-menu-filter="drinks"
+              class="menu-tab rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-2.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-mist/80 transition duration-500 ease-out hover:border-primary/35 hover:text-cream"
+              data-i18n="menu.cat.drinks"
+            >
+              Drinks
+            </button>
+          </div>
+
+          <div id="menu-panel" role="tabpanel" aria-labelledby="tab-breakfast" class="mt-12 sm:mt-14" data-gsap-scroll>
+            <div id="menu-grid" class="grid gap-8 sm:grid-cols-2 xl:grid-cols-2 xl:gap-10">
+              <article
+                data-premium-hover
+                data-menu-item
+                data-category="breakfast"
+                class="group relative flex flex-col overflow-hidden rounded-[1.75rem] border border-white/8 bg-elevated/40 shadow-glass backdrop-blur-xl transition duration-500 ease-out hover:border-primary/25 hover:shadow-glow"
+              >
+                <div class="relative aspect-[16/11] overflow-hidden">
+                  <img
+                    class="h-full w-full object-cover transition duration-[900ms] ease-out"
+                    src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&amp;fit=crop&amp;w=1200&amp;q=82"
+                    width="1200"
+                    height="800"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    data-i18n-alt="menu.sharedAlt"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent opacity-80"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+                <div class="flex flex-1 flex-col gap-4 p-8 sm:p-9">
+                  <div class="flex items-start justify-between gap-4">
+                    <h3 class="font-display text-2xl text-cream" data-i18n="menu.bf1.name">Sofia Sunrise Plate</h3>
+                    <p class="shrink-0 text-sm font-semibold tabular-nums text-primary" data-i18n="menu.bf1.price">BGN 18.90</p>
+                  </div>
+                  <p class="text-base leading-relaxed text-mist/80" data-i18n="menu.bf1.desc">
+                    Eggs, local feta, avocado, sourdough, and roasted cherry tomatoes.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                data-premium-hover
+                data-menu-item
+                data-category="breakfast"
+                class="group relative flex flex-col overflow-hidden rounded-[1.75rem] border border-white/8 bg-elevated/40 shadow-glass backdrop-blur-xl transition duration-500 ease-out hover:border-primary/25 hover:shadow-glow"
+              >
+                <div class="relative aspect-[16/11] overflow-hidden">
+                  <img
+                    class="h-full w-full object-cover transition duration-[900ms] ease-out"
+                    src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&amp;fit=crop&amp;w=1200&amp;q=82"
+                    width="1200"
+                    height="800"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    data-i18n-alt="menu.sharedAlt"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent opacity-80"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+                <div class="flex flex-1 flex-col gap-4 p-8 sm:p-9">
+                  <div class="flex items-start justify-between gap-4">
+                    <h3 class="font-display text-2xl text-cream" data-i18n="menu.bf2.name">Vitosha Granola Bowl</h3>
+                    <p class="shrink-0 text-sm font-semibold tabular-nums text-primary" data-i18n="menu.bf2.price">BGN 14.50</p>
+                  </div>
+                  <p class="text-base leading-relaxed text-mist/80" data-i18n="menu.bf2.desc">
+                    Greek yogurt, honey, seasonal fruit, and toasted nuts.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                data-premium-hover
+                data-menu-item
+                data-category="lunch"
+                class="group relative hidden flex-col overflow-hidden rounded-[1.75rem] border border-white/8 bg-elevated/40 shadow-glass backdrop-blur-xl transition duration-500 ease-out hover:border-primary/25 hover:shadow-glow"
+              >
+                <div class="relative aspect-[16/11] overflow-hidden">
+                  <img
+                    class="h-full w-full object-cover transition duration-[900ms] ease-out"
+                    src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&amp;fit=crop&amp;w=1200&amp;q=82"
+                    width="1200"
+                    height="800"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    data-i18n-alt="menu.sharedAlt"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent opacity-80"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+                <div class="flex flex-1 flex-col gap-4 p-8 sm:p-9">
+                  <div class="flex items-start justify-between gap-4">
+                    <h3 class="font-display text-2xl text-cream" data-i18n="menu.lu1.name">Boulevard Caesar</h3>
+                    <p class="shrink-0 text-sm font-semibold tabular-nums text-primary" data-i18n="menu.lu1.price">BGN 22.00</p>
+                  </div>
+                  <p class="text-base leading-relaxed text-mist/80" data-i18n="menu.lu1.desc">
+                    Romaine, parmesan crisp, anchovy-garlic dressing, grilled chicken.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                data-premium-hover
+                data-menu-item
+                data-category="lunch"
+                class="group relative hidden flex-col overflow-hidden rounded-[1.75rem] border border-white/8 bg-elevated/40 shadow-glass backdrop-blur-xl transition duration-500 ease-out hover:border-primary/25 hover:shadow-glow"
+              >
+                <div class="relative aspect-[16/11] overflow-hidden">
+                  <img
+                    class="h-full w-full object-cover transition duration-[900ms] ease-out"
+                    src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&amp;fit=crop&amp;w=1200&amp;q=82"
+                    width="1200"
+                    height="800"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    data-i18n-alt="menu.sharedAlt"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent opacity-80"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+                <div class="flex flex-1 flex-col gap-4 p-8 sm:p-9">
+                  <div class="flex items-start justify-between gap-4">
+                    <h3 class="font-display text-2xl text-cream" data-i18n="menu.lu2.name">Truffle Tagliatelle</h3>
+                    <p class="shrink-0 text-sm font-semibold tabular-nums text-primary" data-i18n="menu.lu2.price">BGN 28.50</p>
+                  </div>
+                  <p class="text-base leading-relaxed text-mist/80" data-i18n="menu.lu2.desc">
+                    House pasta, black truffle butter, pecorino, and cracked pepper.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                data-premium-hover
+                data-menu-item
+                data-category="dinner"
+                class="group relative hidden flex-col overflow-hidden rounded-[1.75rem] border border-white/8 bg-elevated/40 shadow-glass backdrop-blur-xl transition duration-500 ease-out hover:border-primary/25 hover:shadow-glow"
+              >
+                <div class="relative aspect-[16/11] overflow-hidden">
+                  <img
+                    class="h-full w-full object-cover transition duration-[900ms] ease-out"
+                    src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&amp;fit=crop&amp;w=1200&amp;q=82"
+                    width="1200"
+                    height="800"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    data-i18n-alt="menu.sharedAlt"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent opacity-80"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+                <div class="flex flex-1 flex-col gap-4 p-8 sm:p-9">
+                  <div class="flex items-start justify-between gap-4">
+                    <h3 class="font-display text-2xl text-cream" data-i18n="menu.dn1.name">Dry-Aged Ribeye</h3>
+                    <p class="shrink-0 text-sm font-semibold tabular-nums text-primary" data-i18n="menu.dn1.price">BGN 48.00</p>
+                  </div>
+                  <p class="text-base leading-relaxed text-mist/80" data-i18n="menu.dn1.desc">
+                    300g ribeye, confit garlic, red wine jus, and charred leeks.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                data-premium-hover
+                data-menu-item
+                data-category="dinner"
+                class="group relative hidden flex-col overflow-hidden rounded-[1.75rem] border border-white/8 bg-elevated/40 shadow-glass backdrop-blur-xl transition duration-500 ease-out hover:border-primary/25 hover:shadow-glow"
+              >
+                <div class="relative aspect-[16/11] overflow-hidden">
+                  <img
+                    class="h-full w-full object-cover transition duration-[900ms] ease-out"
+                    src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&amp;fit=crop&amp;w=1200&amp;q=82"
+                    width="1200"
+                    height="800"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    data-i18n-alt="menu.sharedAlt"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent opacity-80"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+                <div class="flex flex-1 flex-col gap-4 p-8 sm:p-9">
+                  <div class="flex items-start justify-between gap-4">
+                    <h3 class="font-display text-2xl text-cream" data-i18n="menu.dn2.name">Black Cod Miso</h3>
+                    <p class="shrink-0 text-sm font-semibold tabular-nums text-primary" data-i18n="menu.dn2.price">BGN 42.00</p>
+                  </div>
+                  <p class="text-base leading-relaxed text-mist/80" data-i18n="menu.dn2.desc">
+                    Miso-glazed cod, baby bok choy, sesame, and citrus emulsion.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                data-premium-hover
+                data-menu-item
+                data-category="drinks"
+                class="group relative hidden flex-col overflow-hidden rounded-[1.75rem] border border-white/8 bg-elevated/40 shadow-glass backdrop-blur-xl transition duration-500 ease-out hover:border-primary/25 hover:shadow-glow"
+              >
+                <div class="relative aspect-[16/11] overflow-hidden">
+                  <img
+                    class="h-full w-full object-cover transition duration-[900ms] ease-out"
+                    src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&amp;fit=crop&amp;w=1200&amp;q=82"
+                    width="1200"
+                    height="800"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    data-i18n-alt="menu.sharedAlt"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent opacity-80"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+                <div class="flex flex-1 flex-col gap-4 p-8 sm:p-9">
+                  <div class="flex items-start justify-between gap-4">
+                    <h3 class="font-display text-2xl text-cream" data-i18n="menu.dr1.name">Gold 88 Spritz</h3>
+                    <p class="shrink-0 text-sm font-semibold tabular-nums text-primary" data-i18n="menu.dr1.price">BGN 16.00</p>
+                  </div>
+                  <p class="text-base leading-relaxed text-mist/80" data-i18n="menu.dr1.desc">
+                    Prosecco, bitter orange, rosemary, and sparkling finish.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                data-premium-hover
+                data-menu-item
+                data-category="drinks"
+                class="group relative hidden flex-col overflow-hidden rounded-[1.75rem] border border-white/8 bg-elevated/40 shadow-glass backdrop-blur-xl transition duration-500 ease-out hover:border-primary/25 hover:shadow-glow"
+              >
+                <div class="relative aspect-[16/11] overflow-hidden">
+                  <img
+                    class="h-full w-full object-cover transition duration-[900ms] ease-out"
+                    src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&amp;fit=crop&amp;w=1200&amp;q=82"
+                    width="1200"
+                    height="800"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    data-i18n-alt="menu.sharedAlt"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent opacity-80"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+                <div class="flex flex-1 flex-col gap-4 p-8 sm:p-9">
+                  <div class="flex items-start justify-between gap-4">
+                    <h3 class="font-display text-2xl text-cream" data-i18n="menu.dr2.name">Obsidian Negroni</h3>
+                    <p class="shrink-0 text-sm font-semibold tabular-nums text-primary" data-i18n="menu.dr2.price">BGN 15.50</p>
+                  </div>
+                  <p class="text-base leading-relaxed text-mist/80" data-i18n="menu.dr2.desc">
+                    Barrel-aged gin, vermouth, amaro, and orange oils.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="gallery"
+        class="scroll-mt-28 border-t border-primary/10 bg-surface px-5 py-24 sm:px-8 sm:py-28 lg:scroll-mt-32 lg:px-10 lg:py-36"
+        aria-labelledby="gallery-heading"
+      >
+        <div class="mx-auto max-w-7xl">
+          <div class="max-w-3xl" data-gsap-scroll>
+            <p class="text-[11px] font-semibold uppercase tracking-[0.4em] text-primary/85" data-i18n="gallery.kicker">Atmosphere</p>
+            <h2
+              id="gallery-heading"
+              class="mt-4 font-display text-4xl text-cream sm:text-5xl lg:text-[3.25rem]"
+              data-i18n="gallery.title"
+            >
+              Gallery
+            </h2>
+            <p class="mt-6 text-lg leading-relaxed text-mist/85 md:text-xl md:leading-relaxed" data-i18n="gallery.lead">
+              Interiors, fire, and glass — scroll slowly, the frames move with you.
+            </p>
+          </div>
+
+          <div class="mt-14 grid grid-cols-1 gap-6 sm:mt-16 sm:gap-7 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
+            <figure
+              class="group relative overflow-hidden rounded-[1.75rem] border border-white/8 bg-elevated/40 shadow-glass lg:col-span-7"
+              data-gsap-scroll
+              data-gallery-parallax
+              data-premium-hover
+            >
+              <div class="relative aspect-[4/3] w-full overflow-hidden sm:aspect-[16/10] lg:aspect-[16/9]">
+                <img
+                  class="gallery-parallax-img absolute left-0 top-0 h-[118%] w-full max-w-none object-cover object-center transition duration-700 group-hover:brightness-110"
+                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1600&amp;q=82"
+                  width="1600"
+                  height="1067"
+                  sizes="(max-width: 768px) 100vw, 58vw"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  data-i18n-alt="gallery.img1.alt"
+                />
+                <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent"
+                  aria-hidden="true"
+                ></div>
+              </div>
+              <figcaption
+                class="absolute bottom-0 left-0 right-0 px-5 py-5 text-[11px] font-semibold uppercase tracking-[0.28em] text-cream/90"
+                data-i18n="gallery.cap1"
+              >
+                Main dining room
+              </figcaption>
+            </figure>
+
+            <figure
+              class="group relative overflow-hidden rounded-[1.75rem] border border-white/8 bg-elevated/40 shadow-glass lg:col-span-5"
+              data-gsap-scroll
+              data-gallery-parallax
+              data-premium-hover
+            >
+              <div class="relative aspect-[4/5] w-full overflow-hidden sm:aspect-[3/4]">
+                <img
+                  class="gallery-parallax-img absolute left-0 top-0 h-[118%] w-full max-w-none object-cover object-center transition duration-700 group-hover:brightness-110"
+                  src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&amp;fit=crop&amp;w=1200&amp;q=82"
+                  width="1200"
+                  height="1500"
+                  sizes="(max-width: 768px) 100vw, 42vw"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  data-i18n-alt="gallery.img2.alt"
+                />
+                <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent"
+                  aria-hidden="true"
+                ></div>
+              </div>
+              <figcaption
+                class="absolute bottom-0 left-0 right-0 px-5 py-5 text-[11px] font-semibold uppercase tracking-[0.28em] text-cream/90"
+                data-i18n="gallery.cap2"
+              >
+                Bar &amp; cocktails
+              </figcaption>
+            </figure>
+
+            <figure
+              class="group relative overflow-hidden rounded-[1.75rem] border border-white/8 bg-elevated/40 shadow-glass lg:col-span-5"
+              data-gsap-scroll
+              data-gallery-parallax
+              data-premium-hover
+            >
+              <div class="relative aspect-[4/3] w-full overflow-hidden">
+                <img
+                  class="gallery-parallax-img absolute left-0 top-0 h-[118%] w-full max-w-none object-cover object-center transition duration-700 group-hover:brightness-110"
+                  src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1400&amp;q=82"
+                  width="1400"
+                  height="933"
+                  sizes="(max-width: 768px) 100vw, 42vw"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  data-i18n-alt="gallery.img3.alt"
+                />
+                <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent"
+                  aria-hidden="true"
+                ></div>
+              </div>
+              <figcaption
+                class="absolute bottom-0 left-0 right-0 px-5 py-5 text-[11px] font-semibold uppercase tracking-[0.28em] text-cream/90"
+                data-i18n="gallery.cap3"
+              >
+                Signature plating
+              </figcaption>
+            </figure>
+
+            <figure
+              class="group relative overflow-hidden rounded-[1.75rem] border border-white/8 bg-elevated/40 shadow-glass lg:col-span-7"
+              data-gsap-scroll
+              data-gallery-parallax
+              data-premium-hover
+            >
+              <div class="relative aspect-[4/3] w-full overflow-hidden sm:aspect-[16/10]">
+                <img
+                  class="gallery-parallax-img absolute left-0 top-0 h-[118%] w-full max-w-none object-cover object-center transition duration-700 group-hover:brightness-110"
+                  src="https://images.unsplash.com/photo-1559339352-9b0470b27b8a?auto=format&amp;fit=crop&amp;w=1600&amp;q=82"
+                  width="1600"
+                  height="1067"
+                  sizes="(max-width: 768px) 100vw, 58vw"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  data-i18n-alt="gallery.img4.alt"
+                />
+                <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/25 to-transparent"
+                  aria-hidden="true"
+                ></div>
+              </div>
+              <figcaption
+                class="absolute bottom-0 left-0 right-0 px-5 py-5 text-[11px] font-semibold uppercase tracking-[0.28em] text-cream/90"
+                data-i18n="gallery.cap4"
+              >
+                Evening ambiance
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="booking"
+        class="scroll-mt-28 border-t border-primary/10 bg-ink px-5 py-24 sm:px-8 sm:py-28 lg:scroll-mt-32 lg:px-10 lg:py-36"
+        aria-labelledby="booking-heading"
+      >
+        <div class="mx-auto max-w-3xl" data-gsap-scroll>
+          <p class="text-[11px] font-semibold uppercase tracking-[0.4em] text-primary/85" data-i18n="booking.kicker">Reservations</p>
+          <p
+            class="mt-4 inline-flex items-center gap-2 rounded-full border border-primary/35 bg-primary/10 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.26em] text-primary"
+            data-i18n="booking.urgency"
+          >
+            Prime times book out first — lock yours now
+          </p>
+          <h2
+            id="booking-heading"
+            class="mt-5 font-display text-4xl text-cream sm:text-5xl lg:text-[3.25rem] lg:leading-tight"
+            data-i18n="booking.title"
+          >
+            Hold your table
+          </h2>
+          <p class="mt-6 text-lg leading-relaxed text-mist/85" data-i18n="booking.lead">
+            Instant confirmations via Tablein — styled to match our room.
+          </p>
+          <div
+            class="mt-10 overflow-hidden rounded-[1.75rem] border border-primary/25 bg-[#050508]/80 shadow-[0_0_0_1px_rgba(212,175,55,0.12),0_30px_80px_rgba(0,0,0,0.55)] backdrop-blur-xl"
+          >
+            <div
+              class="flex flex-col gap-2 border-b border-white/5 bg-gradient-to-r from-primary/10 to-transparent px-5 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6"
+            >
+              <span class="text-[11px] font-semibold uppercase tracking-[0.32em] text-primary/80" data-i18n="booking.badge"
+                >Tablein</span
+              >
+              <span class="text-[10px] leading-snug text-mist/45 sm:max-w-[60%] sm:text-right" data-i18n="booking.note"
+                >Replace iframe src with your Tablein Widget Integration HTML.</span
+              >
+            </div>
+            <div class="relative bg-ink p-3 sm:p-4">
+              <div class="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-primary/10" aria-hidden="true"></div>
+              <iframe
+                id="tablein-booking"
+                title="Tablein online reservations"
+                data-i18n-title="booking.iframeTitle"
+                class="relative z-[1] min-h-[560px] w-full max-w-full rounded-2xl border-0 bg-ink sm:min-h-[680px]"
+                src="https://widget.tablein.com/"
+                width="100%"
+                height="680"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allow="payment *; publickey-credentials-get *"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="scroll-mt-28 border-t border-primary/10 bg-gradient-to-b from-surface via-ink to-ink px-5 py-24 sm:px-8 sm:py-28 lg:scroll-mt-32 lg:px-10 lg:py-36"
+        aria-labelledby="contact-heading"
+      >
+        <div class="mx-auto max-w-7xl">
+          <div class="max-w-3xl" data-gsap-scroll>
+            <p class="text-[11px] font-semibold uppercase tracking-[0.4em] text-primary/85" data-i18n="contact.kicker">Visit</p>
+            <h2
+              id="contact-heading"
+              class="mt-4 font-display text-4xl text-cream sm:text-5xl lg:text-[3.25rem]"
+              data-i18n="contact.title"
+            >
+              Contact
+            </h2>
+            <p class="mt-6 text-lg leading-relaxed text-mist/85 md:text-xl md:leading-relaxed" data-i18n="contact.lead">
+              Hours, reservations, and the map — everything you need before you arrive in velvet and smoke.
+            </p>
+          </div>
+
+          <div class="mt-14 grid gap-10 lg:mt-16 lg:grid-cols-2 lg:gap-14">
+            <div class="space-y-10" data-gsap-scroll>
+              <div class="rounded-[1.75rem] border border-white/8 bg-elevated/50 p-8 shadow-glass backdrop-blur-xl sm:p-10">
+                <p class="text-[11px] font-semibold uppercase tracking-[0.32em] text-primary/80" data-i18n="contact.labelVisit">
+                  Visit
+                </p>
+                <p class="mt-3 font-display text-3xl text-cream" data-i18n="contact.venue">Bar &amp; Dinner 88</p>
+                <address class="mt-4 space-y-1 text-base not-italic leading-relaxed text-mist/80">
+                  <p data-i18n="contact.addressLine1">Bulevard Vitosha 12</p>
+                  <p data-i18n="contact.addressLine2">1000 Sofia, Bulgaria</p>
+                </address>
+                <div class="mt-8 border-t border-white/5 pt-8">
+                  <p class="text-[11px] font-semibold uppercase tracking-[0.32em] text-primary/80" data-i18n="contact.hoursKicker">
+                    Opening hours
+                  </p>
+                  <dl class="mt-4 space-y-3 text-sm text-mist/80">
+                    <div class="flex justify-between gap-6">
+                      <dt data-i18n="contact.hours1d">Tue — Thu</dt>
+                      <dd data-i18n="contact.hours1t">12:00 — 23:00</dd>
+                    </div>
+                    <div class="flex justify-between gap-6">
+                      <dt data-i18n="contact.hours2d">Fri — Sat</dt>
+                      <dd data-i18n="contact.hours2t">12:00 — 01:00</dd>
+                    </div>
+                    <div class="flex justify-between gap-6">
+                      <dt data-i18n="contact.hours3d">Sun — Mon</dt>
+                      <dd data-i18n="contact.hours3t">12:00 — 22:00</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="mt-8 flex flex-wrap gap-3">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-ink/40 text-cream transition hover:border-primary/35 hover:text-primary"
+                    aria-label="Instagram"
+                    ><i data-lucide="instagram" class="h-5 w-5" aria-hidden="true"></i
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-ink/40 text-cream transition hover:border-primary/35 hover:text-primary"
+                    aria-label="Facebook"
+                    ><i data-lucide="facebook" class="h-5 w-5" aria-hidden="true"></i
+                  ></a>
+                </div>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Bulevard%20Vitosha%2012%2C%201000%20Sofia%2C%20Bulgaria"
+                  class="mt-8 inline-flex min-h-[52px] w-full items-center justify-center rounded-2xl border border-primary/30 bg-primary/10 px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-cream transition hover:border-primary/50 hover:shadow-glow"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="contact.openMaps"
+                >
+                  Open in Google Maps
+                </a>
+              </div>
+
+              <form
+                id="reservation-form"
+                class="rounded-[1.75rem] border border-white/8 bg-elevated/50 p-8 shadow-glass backdrop-blur-xl sm:p-10"
+                novalidate
+              >
+                <p class="text-[11px] font-semibold uppercase tracking-[0.32em] text-primary/80" data-i18n="form.kicker">
+                  Concierge note
+                </p>
+                <p class="mt-3 text-sm leading-relaxed text-mist/70" data-i18n="form.lead">
+                  Share allergies, anniversaries, or vinyl requests — we read every message before service.
+                </p>
+                <div class="mt-8 grid gap-5 sm:grid-cols-2">
+                  <label class="block sm:col-span-2">
+                    <span class="text-[10px] font-semibold uppercase tracking-[0.28em] text-mist/55" data-i18n="form.name"
+                      >Full name</span
+                    >
+                    <input
+                      name="name"
+                      type="text"
+                      autocomplete="name"
+                      required
+                      class="mt-2 w-full rounded-2xl border border-white/10 bg-ink/60 px-4 py-3.5 text-base text-cream outline-none ring-primary/0 transition focus:border-primary/35 focus:ring-4 focus:ring-primary/15"
+                    />
+                  </label>
+                  <label class="block">
+                    <span class="text-[10px] font-semibold uppercase tracking-[0.28em] text-mist/55" data-i18n="form.email"
+                      >Email</span
+                    >
+                    <input
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      required
+                      class="mt-2 w-full rounded-2xl border border-white/10 bg-ink/60 px-4 py-3.5 text-base text-cream outline-none transition focus:border-primary/35 focus:ring-4 focus:ring-primary/15"
+                    />
+                  </label>
+                  <label class="block">
+                    <span class="text-[10px] font-semibold uppercase tracking-[0.28em] text-mist/55" data-i18n="form.phone"
+                      >Phone</span
+                    >
+                    <input
+                      name="phone"
+                      type="tel"
+                      autocomplete="tel"
+                      required
+                      class="mt-2 w-full rounded-2xl border border-white/10 bg-ink/60 px-4 py-3.5 text-base text-cream outline-none transition focus:border-primary/35 focus:ring-4 focus:ring-primary/15"
+                    />
+                  </label>
+                  <label class="block">
+                    <span class="text-[10px] font-semibold uppercase tracking-[0.28em] text-mist/55" data-i18n="form.date"
+                      >Date</span
+                    >
+                    <input
+                      name="date"
+                      type="date"
+                      required
+                      class="mt-2 w-full rounded-2xl border border-white/10 bg-ink/60 px-4 py-3.5 text-base text-cream outline-none transition focus:border-primary/35 focus:ring-4 focus:ring-primary/15"
+                    />
+                  </label>
+                  <label class="block">
+                    <span class="text-[10px] font-semibold uppercase tracking-[0.28em] text-mist/55" data-i18n="form.time"
+                      >Time</span
+                    >
+                    <input
+                      name="time"
+                      type="time"
+                      required
+                      class="mt-2 w-full rounded-2xl border border-white/10 bg-ink/60 px-4 py-3.5 text-base text-cream outline-none transition focus:border-primary/35 focus:ring-4 focus:ring-primary/15"
+                    />
+                  </label>
+                  <label class="block sm:col-span-2">
+                    <span class="text-[10px] font-semibold uppercase tracking-[0.28em] text-mist/55" data-i18n="form.guests"
+                      >Guests</span
+                    >
+                    <input
+                      name="guests"
+                      type="number"
+                      min="1"
+                      max="12"
+                      value="2"
+                      required
+                      class="mt-2 w-full rounded-2xl border border-white/10 bg-ink/60 px-4 py-3.5 text-base text-cream outline-none transition focus:border-primary/35 focus:ring-4 focus:ring-primary/15"
+                    />
+                  </label>
+                  <label class="block sm:col-span-2">
+                    <span class="text-[10px] font-semibold uppercase tracking-[0.28em] text-mist/55" data-i18n="form.message"
+                      >Message</span
+                    >
+                    <textarea
+                      name="message"
+                      rows="4"
+                      class="mt-2 w-full rounded-2xl border border-white/10 bg-ink/60 px-4 py-3.5 text-base text-cream outline-none transition focus:border-primary/35 focus:ring-4 focus:ring-primary/15"
+                    ></textarea>
+                  </label>
+                </div>
+                <p id="form-status" class="mt-5 min-h-[1.25rem] text-sm text-primary" role="status" aria-live="polite"></p>
+                <button
+                  type="submit"
+                  class="btn-primary mt-6 inline-flex min-h-[52px] w-full items-center justify-center rounded-2xl px-6 py-3.5 text-[11px] font-semibold uppercase tracking-[0.3em] text-ink shadow-glow transition duration-500 ease-out hover:-translate-y-0.5"
+                  data-i18n="form.submit"
+                >
+                  Send request
+                </button>
+              </form>
+            </div>
+
+            <div
+              class="relative min-h-[260px] w-full overflow-hidden rounded-[1.75rem] border border-primary/20 bg-[#050508] shadow-glass sm:min-h-[320px] lg:min-h-[520px]"
+              data-gsap-scroll
+            >
+              <div class="pointer-events-none absolute inset-0 z-[1] rounded-[1.75rem] ring-1 ring-inset ring-primary/12" aria-hidden="true"></div>
+              <iframe
+                class="relative z-0 h-full min-h-[260px] w-full border-0 sm:min-h-[320px] lg:absolute lg:inset-0 lg:min-h-full"
+                title="Google Maps — Bar & Dinner 88, Vitosha Blvd 12, Sofia"
+                data-i18n-title="contact.mapTitle"
+                src="https://maps.google.com/maps?q=Bulevard+Vitosha+12,+1000+Sofia,+Bulgaria&amp;z=17&amp;hl=en&amp;output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/5 bg-ink px-5 py-12 sm:px-8 lg:px-10">
+      <div class="mx-auto flex max-w-7xl flex-col gap-6 text-sm text-mist/55 sm:flex-row sm:items-center sm:justify-between">
+        <p class="font-display text-lg text-cream/80">Bar &amp; Dinner 88</p>
+        <p data-i18n="footer.copy">© 2026 · Crafted on Vitosha Boulevard</p>
+      </div>
+    </footer>
+
+    <div
+      id="sticky-book-cta"
+      class="pointer-events-none fixed inset-x-0 bottom-0 z-[130] px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2 sm:px-6"
+      role="region"
+      aria-label="Quick booking"
+    >
+      <div
+        data-sticky-glow
+        class="pointer-events-auto mx-auto flex max-w-lg flex-col gap-3 rounded-2xl border border-primary/20 glass-panel px-4 py-3 shadow-glow sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-5 sm:py-3.5"
+      >
+        <p class="text-center text-xs leading-snug text-mist/85 sm:text-left sm:text-sm" data-i18n="sticky.line">
+          Tonight on Vitosha — we hold a table for you.
+        </p>
+        <a
+          href="#booking"
+          class="btn-primary inline-flex min-h-[48px] shrink-0 items-center justify-center gap-2 rounded-xl px-6 py-3 text-[10px] font-semibold uppercase tracking-[0.28em] text-ink shadow-glow transition hover:-translate-y-0.5 sm:min-h-0 sm:px-7"
+        >
+          <i data-lucide="calendar-check" class="h-4 w-4 shrink-0" aria-hidden="true"></i>
+          <span data-i18n="sticky.cta">Reserve</span>
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>
+      (function () {
+        function hidePreloader() {
+          try {
+            document.documentElement.classList.remove("is-loading");
+            document.documentElement.classList.add("is-loaded");
+            var el = document.getElementById("site-preloader");
+            if (el) {
+              el.setAttribute("aria-busy", "false");
+              el.style.opacity = "0";
+              el.style.visibility = "hidden";
+              el.style.pointerEvents = "none";
+            }
+          } catch (e) {}
+        }
+        window.addEventListener("load", hidePreloader, { once: true });
+        setTimeout(hidePreloader, 1800);
+      })();
+    </script>
+    <script defer src="app.js"></script>
+  </body>
+</html>
